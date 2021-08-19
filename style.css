@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+body{
+    margin: 0;
+    color: #fff;
+    align-items: center;
+    height: 100vh;
+    background: #050801;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+}
+
+.reiniciar {
+    width: 100%;
+    text-align: center;
+}
+
+button {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px;
+    color: #03e9f4;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    background: transparent;
+    border: none;
+}
+
+button:hover {
+    cursor: pointer;
+    background: #03e9f4;
+    color: #050801;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 200px #03e9f4;
+     -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+button span{
+    position: absolute;
+    display: block;
+}
+
+button span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#03e9f4);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+
+button span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#03e9f4);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+
+button span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#03e9f4);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+button span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#03e9f4);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+p {
+    float: left; 
+    margin-right: 10px;
+}
+
+img {
+    border: 0;
+    height: 50px;
+}
+
+.cabecalho {
+    padding: 30px;
+}
+
+.cabecalho p{
+    display: inline-block;
+    width: 100%;
+
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0 20px 0;
+
+}
+
+#mostrador {
+    margin: auto;
+    padding: 40px;
+    width: 252px;
+    height: 80px;
+}
+
+.espaco {
+    width: 80px;
+    height: 60px;
+    border: 2px solid #fff;
+    float: left;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.espaco:hover {
+    background: rgb(27, 28, 26);
+}
+
+.espaco.a {
+    border-top: none;
+}
+
+.espaco.c {
+    border-bottom: none;
+}
+
+.espaco.tres {
+    border-right: none;
+}
+
+.espaco.um {
+    border-left: none;
+}
+
+.tabuleiro {
+    width: 252px;
+    height: 252px;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; 
+}
+
+.box {
+    display: block;
+    width: 300px;
+    height: 50px;
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 1em #03e9f4;
+}
+
+.container p {
+    color: #000;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container a {
+    text-decoration: none;
+}

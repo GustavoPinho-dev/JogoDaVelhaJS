@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+
+    <header>
+        <div class="cabecalho">
+            <p>Jogo da Velha</p>
+        </div>
+    </header>
+
+    <div id="mostrador">
+        <p>Vez do Jogador:</p>
+        <img src="" alt="" />
+    </div>
+
+    <div class="tabuleiro">
+        <div id="a1" class="espaco a um" jogada=""></div>
+        <div id="a2" class="espaco a" jogada=""></div>
+        <div id="a3" class="espaco a tres" jogada=""></div>
+
+        <div id="b1" class="espaco b um" jogada=""></div>
+        <div id="b2" class="espaco b" jogada=""></div>
+        <div id="b3" class="espaco b tres" jogada=""></div>
+
+        <div id="c1" class="espaco c um" jogada=""></div>
+        <div id="c2" class="espaco c" jogada=""></div>
+        <div id="c3" class="espaco c tres" jogada=""></div>
+
+    </div>
+
+    <div class="reiniciar" style="display:none">
+        <button id="btn-reiniciar">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Reiniciar jogo
+        </button>
+    </div>
+
+    <div class="container" style="display:none">
+        <div class="box">
+            <p>Fim de Jogo!</p>
+            <!--<p>O jogador X venceu</p>-->  
+        </div>
+    </div>
+
+    <script type="text/javascript" src="game.js"></script>
+</body>
+</html>
