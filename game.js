@@ -1,6 +1,6 @@
 // Essas constantes determinam os jogadores
-const player1 = "X"
-const player2 = "O"
+const player1 = "Homem de Ferro"
+const player2 = "Capitão América"
 
 // var que determinará de quem é a vez de jogar
 var playTime = player1
@@ -22,12 +22,12 @@ function atualizaMostrador() {
     if (playTime == player1) {
 
         var player = document.querySelectorAll("div#mostrador img")[0]
-        player.setAttribute("src", "images/x.png")
+        player.setAttribute("src", "images/homemDeFerro.png")
 
     } else {
 
         var player = document.querySelectorAll("div#mostrador img")[0]
-        player.setAttribute("src", "images/circulo.png")
+        player.setAttribute("src", "images/capitaoAmerica.png")
     }
 }
 
@@ -49,13 +49,13 @@ function inicializarEspacos() {
 
                 if (playTime == player1) {
 
-                    this.innerHTML = "<img src='images/x.png'>"
+                    this.innerHTML = "<img src='images/homemDeFerro.png'>"
                     this.setAttribute("jogada", player1)
                     playTime = player2
 
                 } else {
 
-                    this.innerHTML = "<img src='images/circulo.png'>"
+                    this.innerHTML = "<img src='images/capitaoAmerica.png'>"
                     this.setAttribute("jogada", player2)
                     playTime = player1
                 }
